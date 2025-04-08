@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompTIA Security+ SY0-701 Practice Exam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-shield-alt"></i> Security+ Practice</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active" data-page="home">Home</a>
+                <a href="#" data-page="exam-options">Take Exam</a>
+                <a href="#" data-page="study-resources">Study Resources</a>
+                <a href="#" data-page="progress">My Progress</a>
+                <a href="#" data-page="about">About</a>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>CompTIA Security+</h1>
+                    <h2>SY0-701 Certification Exam Practice</h2>
+                    <p>Master cybersecurity concepts and ace your certification exam with our comprehensive practice platform</p>
+                    <button class="primary-btn" id="start-practice">Start Practicing Now</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Security+ Logo">
+                </div>
+            </div>
+
+            <div class="exam-info-container">
+                <div class="exam-info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>About The Exam</h3>
+                    <p>The CompTIA Security+ certification is a global certification that validates foundational, vendor-neutral IT security knowledge and skills. The SY0-701 exam focuses on the latest security trends and technologies.</p>
+                </div>
+                <div class="exam-info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>What You'll Learn</h3>
+                    <p>Security concepts, threats and vulnerabilities, security architecture, security operations, and security program management. Our practice tests cover all exam objectives.</p>
+                </div>
+                <div class="exam-info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Why Practice With Us</h3>
+                    <p>Our platform offers realistic practice questions, detailed explanations, performance tracking, and customizable study options to maximize your exam success potential.</p>
+                </div>
+            </div>
+
+            <div class="exam-details">
+                <h2>CompTIA Security+ SY0-701 Certification</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <h3>Exam Format</h3>
+                        <p>Maximum of 90 multiple-choice & performance-based questions</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Time Limit</h3>
+                        <p>90 minutes</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Passing Score</h3>
+                        <p>750 (on a scale of 100-900)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Recommended Experience</h3>
+                        <p>Minimum 2 years of IT administration with a focus on security</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="domains-section">
+                <h2>Exam Domains</h2>
+                <div class="domains-container">
+                    <div class="domain-card">
+                        <h3>General Security Concepts (12%)</h3>
+                        <ul>
+                            <li>Security controls</li>
+                            <li>Security concepts</li>
+                            <li>Change management</li>
+                            <li>Cryptographic solutions</li>
+                        </ul>
+                    </div>
+                    <div class="domain-card">
+                        <h3>Threats, Vulnerabilities & Mitigations (22%)</h3>
+                        <ul>
+                            <li>Threat actors and motivations</li>
+                            <li>Threat vectors and attack surfaces</li>
+                            <li>Types of vulnerabilities</li>
+                            <li>Indicators of malicious activity</li>
+                            <li>Enterprise mitigation techniques</li>
+                        </ul>
+                    </div>
+                    <div class="domain-card">
+                        <h3>Security Architecture (18%)</h3>
+                        <ul>
+                            <li>Architecture models and implications</li>
+                            <li>Enterprise infrastructure security</li>
+                            <li>Data protection strategies</li>
+                            <li>Resilience and recovery</li>
+                        </ul>
+                    </div>
+                    <div class="domain-card">
+                        <h3>Security Operations (28%)</h3>
+                        <ul>
+                            <li>Computing resource security</li>
+                            <li>Asset management</li>
+                            <li>Vulnerability management</li>
+                            <li>Security monitoring</li>
+                            <li>Identity and access management</li>
+                            <li>Incident response</li>
+                        </ul>
+                    </div>
+                    <div class="domain-card">
+                        <h3>Security Program Management (20%)</h3>
+                        <ul>
+                            <li>Security governance</li>
+                            <li>Risk management</li>
+                            <li>Third-party assessment</li>
+                            <li>Security compliance</li>
+                            <li>Security awareness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to test your knowledge?</h2>
+                <p>Our practice exams will help you identify your strengths and weaknesses, so you can focus your study time effectively.</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn" id="practice-btn">Practice Exam</button>
+                    <button class="secondary-btn" id="custom-btn">Custom Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Options Page -->
+        <section id="exam-options" class="page">
+            <div class="options-container">
+                <h1>Choose Your Exam Mode</h1>
+                <div class="exam-options-grid">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Full Practice Exam</h3>
+                        <p>Take a complete 90-question exam simulating the real Security+ experience. Timed at 90 minutes with the same domain distribution.</p>
+                        <button class="option-btn" data-mode="full">Start Full Exam</button>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Quick Practice</h3>
+                        <p>A shorter 30-question exam for when you're short on time but want to test your knowledge across all domains.</p>
+                        <button class="option-btn" data-mode="quick">Start Quick Exam</button>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <h3>Domain-Specific</h3>
+                        <p>Focus on questions from a specific exam domain to strengthen your understanding in targeted areas.</p>
+                        <button class="option-btn" data-mode="domain">Choose Domain</button>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Custom Quiz</h3>
+                        <p>Build your own quiz by selecting the number of questions and specific domains to focus on.</p>
+                        <button class="option-btn" data-mode="custom">Create Custom</button>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h3>Missed Questions</h3>
+                        <p>Practice with questions you've previously answered incorrectly to improve your weak areas.</p>
+                        <button class="option-btn" data-mode="missed">Review Missed</button>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-random"></i>
+                        </div>
+                        <h3>Daily Challenge</h3>
+                        <p>Take on a new set of 10 randomly selected questions each day to maintain your knowledge.</p>
+                        <button class="option-btn" data-mode="daily">Today's Challenge</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="domain-selection" class="modal">
+                <div class="modal-content">
+                    <h2>Select a Domain to Study</h2>
+                    <div class="domain-options">
+                        <div class="domain-option">
+                            <input type="radio" id="domain1" name="domain" value="1.0">
+                            <label for="domain1">1.0 General Security Concepts</label>
+                        </div>
+                        <div class="domain-option">
+                            <input type="radio" id="domain2" name="domain" value="2.0">
+                            <label for="domain2">2.0 Threats, Vulnerabilities, and Mitigations</label>
+                        </div>
+                        <div class="domain-option">
+                            <input type="radio" id="domain3" name="domain" value="3.0">
+                            <label for="domain3">3.0 Security Architecture</label>
+                        </div>
+                        <div class="domain-option">
+                            <input type="radio" id="domain4" name="domain" value="4.0">
+                            <label for="domain4">4.0 Security Operations</label>
+                        </div>
+                        <div class="domain-option">
+                            <input type="radio" id="domain5" name="domain" value="5.0">
+                            <label for="domain5">5.0 Security Program Management and Oversight</label>
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <button id="cancel-domain" class="secondary-btn">Cancel</button>
+                        <button id="start-domain-exam" class="primary-btn">Start Exam</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="custom-quiz-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Create Your Custom Quiz</h2>
+                    <div class="custom-options">
+                        <div class="question-count">
+                            <label for="question-count-slider">Number of Questions: <span id="question-count-display">30</span></label>
+                            <input type="range" id="question-count-slider" min="10" max="90" value="30" step="5">
+                        </div>
+                        <div class="domain-selection">
+                            <h3>Include Questions From:</h3>
+                            <div class="domain-checkbox">
+                                <input type="checkbox" id="custom-domain1" name="custom-domain" value="1.0" checked>
+                                <label for="custom-domain1">1.0 General Security Concepts</label>
+                            </div>
+                            <div class="domain-checkbox">
+                                <input type="checkbox" id="custom-domain2" name="custom-domain" value="2.0" checked>
+                                <label for="custom-domain2">2.0 Threats, Vulnerabilities, and Mitigations</label>
+                            </div>
+                            <div class="domain-checkbox">
+                                <input type="checkbox" id="custom-domain3" name="custom-domain" value="3.0" checked>
+                                <label for="custom-domain3">3.0 Security Architecture</label>
+                            </div>
+                            <div class="domain-checkbox">
+                                <input type="checkbox" id="custom-domain4" name="custom-domain" value="4.0" checked>
+                                <label for="custom-domain4">4.0 Security Operations</label>
+                            </div>
+                            <div class="domain-checkbox">
+                                <input type="checkbox" id="custom-domain5" name="custom-domain" value="5.0" checked>
+                                <label for="custom-domain5">5.0 Security Program Management and Oversight</label>
+                            </div>
+                        </div>
+                        <div class="time-limit">
+                            <div class="time-option">
+                                <input type="radio" id="timed-option" name="time-option" value="timed" checked>
+                                <label for="timed-option">Timed Exam: <span id="time-limit-display">30</span> minutes</label>
+                                <input type="range" id="time-limit-slider" min="10" max="90" value="30" step="5" class="time-slider">
+                            </div>
+                            <div class="time-option">
+                                <input type="radio" id="untimed-option" name="time-option" value="untimed">
+                                <label for="untimed-option">Untimed (Practice Mode)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <button id="cancel-custom" class="secondary-btn">Cancel</button>
+                        <button id="start-custom-exam" class="primary-btn">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Page -->
+        <section id="exam" class="page">
+            <div class="exam-header">
+                <div class="exam-info">
+                    <h2 id="exam-title">Security+ Practice Exam</h2>
+                    <p id="exam-description">90 Questions | 90 Minutes</p>
+                </div>
+                <div class="exam-progress">
+                    <div class="progress-stats">
+                        <span id="question-counter">Question 1 of 90</span>
+                        <span id="timer" class="timer">90:00</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="exam-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exam-container">
+                <div class="question-navigation">
+                    <div class="navigation-header">
+                        <h3>Question Navigator</h3>
+                        <div class="legend">
+                            <div class="legend-item"><span class="legend-current"></span> Current</div>
+                            <div class="legend-item"><span class="legend-answered"></span> Answered</div>
+                            <div class="legend-item"><span class="legend-flagged"></span> Flagged</div>
+                            <div class="legend-item"><span class="legend-unanswered"></span> Unanswered</div>
+                        </div>
+                    </div>
+                    <div id="question-buttons" class="question-buttons">
+                        <!-- Question buttons will be added dynamically -->
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <div class="question-content">
+                        <h3 id="question-text" class="question-text">Question text appears here</h3>
+                        <div id="options-container" class="options-container">
+                            <!-- Options will be added dynamically -->
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button id="flag-question" class="flag-btn">
+                            <i class="far fa-flag"></i> Flag for Review
+                        </button>
+                        <div class="navigation-buttons">
+                            <button id="prev-question" class="nav-btn">Previous</button>
+                            <button id="next-question" class="nav-btn primary-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exam-footer">
+                <button id="exit-exam" class="secondary-btn">Exit Exam</button>
+                <button id="submit-exam" class="primary-btn">Submit Exam</button>
+            </div>
+
+            <!-- Confirmation Modal -->
+            <div id="submit-confirmation" class="modal">
+                <div class="modal-content">
+                    <h2>Submit Exam Confirmation</h2>
+                    <div class="confirmation-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Total Questions:</span>
+                            <span id="total-questions-stat">90</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Answered:</span>
+                            <span id="answered-stat">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Unanswered:</span>
+                            <span id="unanswered-stat">90</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Flagged for Review:</span>
+                            <span id="flagged-stat">0</span>
+                        </div>
+                    </div>
+                    <p>Are you sure you want to submit your exam? Once submitted, you cannot return to the exam.</p>
+                    <div class="modal-buttons">
+                        <button id="cancel-submit" class="secondary-btn">Return to Exam</button>
+                        <button id="confirm-submit" class="primary-btn">Submit Exam</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exit Confirmation Modal -->
+            <div id="exit-confirmation" class="modal">
+                <div class="modal-content">
+                    <h2>Exit Exam Confirmation</h2>
+                    <p>Are you sure you want to exit the exam? Your progress will not be saved.</p>
+                    <div class="modal-buttons">
+                        <button id="cancel-exit" class="secondary-btn">Return to Exam</button>
+                        <button id="confirm-exit" class="primary-btn">Exit Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Page -->
+        <section id="results" class="page">
+            <div class="results-container">
+                <div class="results-header">
+                    <h1>Exam Results</h1>
+                </div>
+                
+                <div class="score-overview">
+                    <div class="score-card">
+                        <div class="score-circle" id="score-circle">
+                            <div class="percent">
+                                <span id="score-percentage">75%</span>
+                            </div>
+                            <div class="score-label">Your Score</div>
+                        </div>
+                        <div class="pass-fail-indicator">
+                            <span id="pass-fail-badge">PASSED</span>
+                        </div>
+                    </div>
+                    
+                    <div class="score-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Total Questions:</span>
+                            <span id="total-questions">90</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Correct Answers:</span>
+                            <span id="correct-answers">67</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Incorrect Answers:</span>
+                            <span id="incorrect-answers">23</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Time Taken:</span>
+                            <span id="time-taken">65:12</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Date:</span>
+                            <span id="exam-date">August 24, 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="domain-performance">
+                    <h2>Domain Performance Analysis</h2>
+                    <div class="performance-charts">
+                        <div class="chart-container">
+                            <canvas id="domains-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="domain-table">
+                        <div class="domain-row header">
+                            <div class="domain">Domain</div>
+                            <div class="questions">Questions</div>
+                            <div class="correct">Correct</div>
+                            <div class="percentage">Percentage</div>
+                        </div>
+                        <div id="domain-performance-rows">
+                            <!-- Domain rows will be added dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="review-answers" class="primary-btn">Review Answers</button>
+                    <button id="save-results" class="secondary-btn">Save Results</button>
+                    <button id="new-exam" class="secondary-btn">Take Another Exam</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Answers Page -->
+        <section id="review" class="page">
+            <div class="review-container">
+                <div class="review-header">
+                    <h1>Review Answers</h1>
+                    <div class="review-filters">
+                        <button class="filter-btn" data-filter="all">All Questions</button>
+                        <button class="filter-btn" data-filter="incorrect">Incorrect Answers</button>
+                        <button class="filter-btn" data-filter="flagged">Flagged Questions</button>
+                    </div>
+                </div>
+
+                <div id="review-questions">
+                    <!-- Questions will be added dynamically -->
+                </div>
+
+                <div class="review-actions">
+                    <button id="back-to-results" class="secondary-btn">Back to Results</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Resources Page -->
+        <section id="study-resources" class="page">
+            <div class="resources-container">
+                <h1>Study Resources</h1>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Domain Summaries</h3>
+                        <p>Review summaries of key concepts from each Security+ exam domain</p>
+                        <button class="resource-btn">Access Summaries</button>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Glossary</h3>
+                        <p>Comprehensive glossary of security terms and concepts</p>
+                        <button class="resource-btn">View Glossary</button>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Video Tutorials</h3>
+                        <p>Video explanations of complex security topics</p>
+                        <button class="resource-btn">Watch Videos</button>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Practice Questions</h3>
+                        <p>Additional practice questions by domain</p>
+                        <button class="resource-btn">Practice Questions</button>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Downloadable Materials</h3>
+                        <p>Study guides and cheat sheets for offline use</p>
+                        <button class="resource-btn">Download Resources</button>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>External Resources</h3>
+                        <p>Links to valuable Security+ study resources</p>
+                        <button class="resource-btn">Visit Resources</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Page -->
+        <section id="progress" class="page">
+            <div class="progress-container">
+                <h1>My Progress</h1>
+                
+                <div class="progress-dashboard">
+                    <div class="stats-section">
+                        <div class="stat-card">
+                            <h3>Overall Score</h3>
+                            <div class="stat-value" id="overall-score">75%</div>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Exams Taken</h3>
+                            <div class="stat-value" id="exams-taken">12</div>
+                            <div class="stat-text">Full Exams: <span id="full-exams">5</span></div>
+                            <div class="stat-text">Practice Quizzes: <span id="practice-quizzes">7</span></div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Questions Answered</h3>
+                            <div class="stat-value" id="total-questions-answered">540</div>
+                            <div class="stat-text">Correct: <span id="correct-percentage">72%</span></div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Time Studying</h3>
+                            <div class="stat-value" id="study-time">24h 15m</div>
+                            <div class="stat-text">Last Session: <span id="last-session">Today</span></div>
+                        </div>
+                    </div>
+
+                    <div class="domain-strength">
+                        <h2>Domain Strength Analysis</h2>
+                        <div class="strength-chart">
+                            <canvas id="strength-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="progress-history">
+                        <h2>Study History</h2>
+                        <div class="history-chart">
+                            <canvas id="history-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="weak-areas">
+                        <h2>Suggested Focus Areas</h2>
+                        <div class="focus-areas" id="focus-areas">
+                            <!-- Will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-actions">
+                    <button id="reset-progress" class="secondary-btn">Reset Progress Data</button>
+                    <button id="export-progress" class="secondary-btn">Export Progress Data</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="about-container">
+                <h1>About This Platform</h1>
+                
+                <div class="about-content">
+                    <div class="about-section">
+                        <h2>Our Mission</h2>
+                        <p>We created this platform to help cybersecurity professionals prepare for the CompTIA Security+ certification exam. Our goal is to provide a comprehensive, user-friendly study tool that simulates the real exam experience while offering detailed explanations and performance tracking.</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h2>Question Bank</h2>
+                        <p>Our practice exams include over 2,000 questions covering all domains and objectives of the CompTIA Security+ SY0-701 exam. Each question has been carefully crafted to assess your understanding of key security concepts and prepare you for the types of questions you'll encounter on the actual exam.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Features</h2>
+                        <ul>
+                            <li>Full-length practice exams that mirror the actual test environment</li>
+                            <li>Domain-specific quizzes to focus on specific areas</li>
+                            <li>Custom exam creation to tailor your study sessions</li>
+                            <li>Detailed explanations for both correct and incorrect answers</li>
+                            <li>Performance tracking and analytics to identify areas for improvement</li>
+                            <li>Mobile-friendly design for studying on the go</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Updates</h2>
+                        <p>We regularly update our question bank to ensure it remains relevant and aligned with the latest CompTIA Security+ exam objectives. As security technologies and best practices evolve, so do our practice questions.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Contact Us</h2>
+                        <p>If you find any issues or have suggestions for improving our platform, please contact me at reach@sreecharan.in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen">
+            <div class="loader"></div>
+            <p>Loading your exam...</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Security+ Practice</h3>
+                <p>A comprehensive practice platform for the CompTIA Security+ SY0-701 certification exam</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="exam-options">Take Exam</a></li>
+                    <li><a href="#" data-page="study-resources">Study Resources</a></li>
+                    <li><a href="#" data-page="progress">My Progress</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sree Charan | Not affiliated with CompTIA</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="exam.js"></script>
+</body>
+</html>
